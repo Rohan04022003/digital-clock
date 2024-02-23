@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #abcaca;
+  color: white;
+}
+
+.day-section{
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    width: 52rem;
+    height: 4rem;
+    font-weight: 700;
+    background-color: #c9d5e0;
+    border-bottom: 3px solid white;
+}
+
+.day-section > div{
+    padding: 1rem 1rem;
+    background-color: #c9d5e0;
+    color: #0F2C59;
+
+}
+
+.day-section span{
+    color: #bc005b;
+    background-color: #c9d5e0;
+    letter-spacing: 1px;
+}
+
+.outer-time-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 52rem;
+}
+
+.clock-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.clock-box .time-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 13rem;
+  height: 13rem;
+  position: relative;
+  background-color: #c9d5e0;
+  letter-spacing: 5px;
+  font-weight: 700;
+}
+
+.time-box span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  color: #f6f5f5;
+  background-color: #bc005b;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  margin: 0 0 2.5rem 0;
+}
+
+.time-box:nth-child(4) span {
+  font-size: 2rem !important;
+}
+
+.time-box:nth-child(4) > p {
+  font-size: 1rem;
+}
+
+.clock-box .time-box p {
+  position: absolute;
+  bottom: 10%;
+  font-weight: 700;
+  background-color: transparent;
+  color: white;
+  background-color: #bc005b;
+  letter-spacing: 2px;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+
+
+@media (max-width:850px) {
+
+    *{
+        background-color: #c9d5e0;
+    }
+    .clock-box{
+        justify-content: start;
+    }
+    
+    .outer-time-box{
+        flex-direction: column;
+        width: 100%;
+    } 
+
+    .day-section{
+        width: 100%;
+    }
+
+    .time-box{
+        width: 100% !important;
+        height: 11rem !important;
+    }
+    .time-box span{
+        width: 6rem;
+        height: 6rem;
+    }
+    
+}
